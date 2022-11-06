@@ -72,7 +72,8 @@
             font-size: 14px;
         }
 
-        button {
+        .button {
+            all: unset;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -102,6 +103,10 @@
         }
 
         .join-button {
+            all: unset;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 140px;
             height: 44px;
             background: #302E56;
@@ -117,7 +122,7 @@
 <body>
     <header class="flex-row">
         <img width="145" height="30" alt="makesy logo"
-            src="data:image/png;base64,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" />
+            src="https://drive.google.com/uc?export=view&id=1sMFYttEYz70TIzn1ERQtH5oOur5WnOLF" />
         <!-- <h1>Makesy.</h1> -->
     </header>
     <main>
@@ -125,29 +130,29 @@
         <p style="text-align: center;"><strong>Nadia Al Khatib </strong>(Nadia@spark.com) has invited you to join their
             workspace as a Team Member.</p>
         <img width="44px" height="44px" style="width: 44px;"
-            src="data:image/png;base64,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"
+            src="https://drive.google.com/uc?export=view&id=1qx7O1lx-wznWr5XhdzpY5s5J7MOlZav9"
             alt="">
         <h2 style="text-align: center;">Spark Fashion</h2>
-        <button class="join-button ">Join Now</button>
+        <a class="join-button ">Join Now</a>
         <h2>What does a Team Member mean?</h2>
         <p style="color: #595D67;">You have persmission to place orders, monitor production and communicate with makers.</h2>
         <div class="flex-row">
-            <button>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGNSURBVHgB1ZO7TgJBFIb/WRa01MYQqy3RuGZ8g30DlyjGDt8AfQJDZQl2WgGlWoBvYKmVo0Zi59itVhgb5bLjzOwil8ASsOIkm7mcmW/+c1lgro1u7DrUzhz8re0dV+1F3TGjnDCMguJIUEOvSawKAjVfng0IUgEElaBCb09Uom4YUU72eFFUg/ys8OMwWsWZgYGgTr43F3nGavx/QJjb4YTjq1WbdDoW5aSpfQumKAdPN7cQXzhJrqx9eh91jpkUxjslPRJR1qESOLLyJUrdpamBuv8IcaBCJa0wj0K1jAU/cTg1UMKOA0ZfIYQ4Db05mnKtkde0GpWrhH8vp2NDgSA3iP2k0YlXQ+X9xtEWaVa/YoFCs21FwvTTwtGhSsUjvNaAQq1SJfp7AlQae6lxupmRzU1yaolmM41FNGRaGgNADbX3XLlTkOFxFV730LDpx/3EaxAVOQr/KG3DRclq+QTX42BapfaRbuWz/b6Bxk6u2nfw/Qf2dHmGCea9P98mV9bfJOHc8+oe5sZ+Ae1ciobH7t3zAAAAAElFTkSuQmCC"
+            <a href="" class="button">
+                <img src="https://drive.google.com/uc?export=view&id=1Cz2Pji5P6kpoKG1p6qbIqyQAe9GD4ETw"
                     alt="">
                 <div>
                     <p style="margin: 0; font-size: 12px;">Download on</p>
                     <strong>App Store</strong>
                 </div>
-            </button>
-            <button>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG2SURBVHgBpZRPTsJAFMa/GaDsgCN0aUyQ4QSGG8ACXFJOIJyAcgLlBOAWTeAGcAMm6MId9QY1rmxtx9dS/kigFviSJvPedH7z5s3XAjsSerWAC8U2MEEwL1Ol4S1ctyffJxbOEN+M/KwBDxKMfUDTpqJYN3CGtkCoAtJsDMcZUvBE4IG4aSzFdV3gBPG9WA+qC6GKoEGcZnOqdiCuqjoSiB/IETQzRoqbNJZhhjGDNppTxV2cAQwIAp7XBec1CqwoGTjAFMXGGDFKH50JqvJ8myqtwPfnEdBCyumI0t2AcjjkBo44MbRpYRM/qkKXJsEdgmtNKGVEbVjutyEeuJJJF1OSi+dyCAvivfldNyQBUnH4jL4idvQdzbUTAlkHnrKQ0+aRR3s7k3YYc6cs5aqX6X9oPThsAo1NsfYoLYan6VRKHszprEFrxQBVH05qCM1fwVbS4WeG8nVUPbbqMFCpGb5cEzkQjOnYHq8P7j4iRoeA5DW3hnz2gcBis0HKbe0fLwnQirx2TxQjjH2/Jd9eZkioHSCzwb8rkdfa9PTkYmTiRP3xFRmUYKpMfTLpeDYuVfjXvlC/F2mnQtJuu4cAAAAASUVORK5CYII="
+            </a>
+            <a href="" class="button">
+                <img src="https://drive.google.com/uc?export=view&id=1Yu7GvGH-NcTZvr0j3iR6bTMB71Br17Wr"
                     alt="">
                 <div>
                     <p style="margin: 0; font-size: 12px;">Get it on</p>
                     <strong>Google Play</strong>
                 </div>
-            </button>
+            </a>
         </div>
     </main>
     <footer>
@@ -155,35 +160,30 @@
             <h3 style="font-size: 12px; text-align: center;color: #74738E;">Add us to your feed</h3>
             <div class="flex-row" style="width:168px;">
                 <a href="https://www.facebook.com/makesy/" target="_blank" rel="noopener noreferrer">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKeSURBVHgBrVU9dhoxEJ6RNpgucAPKlHZlmxReGj9SxTcInIDlx4UrTJW8wK7xCUK6pHO6xI2hgXTmBuEIpMRZrTKz/BiDhPGzv/f0Vqv5l0afEDbA885TjnhdAtQuAmQ0jZloTGMIWv8Io7urdvtsZPOBZscfM47c+UJTF7aABt1R6q5hCiRXF06rQUkI5xtN38CWQMBdsilkD48n/cH1b2uAWu2iTp9PNJLwdCQBMZ89zEN/8Ku3FoAznzl/HhBcquTvvJL4DGZ7fkvTFLwMxqGa7PGZCP6TMlG3OdfcMagbgCrX8ivII1ThHq1/3RAgNWsSwFn2f4zONYxUhLl2uzwyyT3vIiOFvkFctO8DhArTjiMSJ2DBqvM4GSdR0hGkqIJeEJQ7FCQnpb5Fww44IvIEnfx7k3MN2FnNPC5bo4eIBQRxxGusg6gvTT7I95GgTHZNMqHAZORCfICY9oNy8X456hr9080XaDncZrs8tBiNKevx8lqrddo16TK1OLAFahX/nMqtz41q1YDYQZdbQbX9mC1XMDI69ZrufB5NdbpL4i5Ktfj3vM/GbSaMHT01zqyHFu7caRBUO/TpcOacUNOv5JZVpZQlS4AhdZHuGUWIJW5LeASsQ2RXMAqJzkUYCts+pl7JnZtNQVjGOjZ5GImrmIuodFZybYrM90KpSy0dvlCjf2qSc0TyA1XvgZVisOP75WLcRdTXRdttZPAWkPPC1BBm1KLBnhCMlYIGz2Oy49uotW7AC4FudmPOAov3YED8nX17TEWgC88BJdryq4t35cGL1u9fdw/osaAUDvCJrxpvC2V+tux8LQCDK9nfz39HAWm08JQBXaXwXRBUfq4KcJMV8z1R7gkzLpPivAm4k+ILSneI23yVm5bxH77HEAGcZykVAAAAAElFTkSuQmCC"
+                    <img src="https://drive.google.com/uc?export=view&id=1yjg_2AW4XCca1CfkB1P-LbA3A_vMU-60"
                         alt="makesy facebook page">
                 </a>
                 <a href="https://www.instagram.com/makesy.app/?hl=en" target="_blank" rel="noopener noreferrer">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKtSURBVHgBtVW9VhpREJ65d1WqCG+AXUqsVNJA4yFVfAOlzznyZ2GlVEnBLrwBlEmVpEtswAbSyRuEPIHYBdzdycyyELJcfown3zn3cNm583u/O4OwAoXCddxSu+eAlEGAJPEKRUNefSD64vrjz43G5WCZDTQbfpe09E6TtxnYAATU8rxx1eRIRz9clJ1zpawPvH0JGwIBU6xzlj46HnV7N9+XOqhU6lf8855XDJ6OGCDm0kc56Pa+3S44kMhD488DQoYzeZhmEtxBWPM73saj5/lihygXagDLUmjQYQxdb7Qvd6Lkn9bbV1HjYhjQy9p2KcGH86YlMp8oTxNWzSMekgQwjP5HNARRRCSOXjXBHKWkP/DBL8o5IN2Oyl0PE8pS2yemFB2n3FKg6hHj/XBxhth69HBfAqjVLjqGLMBSfgErZUc8ZyKyDnvPW5qCzIhg4PmYBXgIjexyCajJ/B8wRc8ItpMI45bJjpKLgjUQ45YFp5Z+cR8sBacSgBhfpSevXy1hwTykJFxjuv6jGeyZBGZ2TSGtRcF/hmQwWHOGS/grzlFXAab0pWLwjdaWd2jRxEFy1aktvdN+dEd8ybHG5MsoLt8I1qKvOJpbgyDVaBQHU+pJLeWtbFnUliX7aesWhtn2259GsnA754dWF8rdLwg9L0sauQyqjmjOcBKAnyfCuEJsRuXMtD3FkUqUnQVtrT+Jou2U9rgtGJe0CvRoyMbri86xJVUIm109qTXdLWtcAEvpKGUxNkiPX/nMgaBUsgumSP4JzLJarRwQYjYPety/06+O2SFm4Dkgqtbs8myu/DXRut2bziEPC55Mh/jEqRbMDaTLeeMLDgSSycFB7iMqSOAGfSpEh2v+2nFKX6MCXKUll88t94QzejM/veT1Bw+U35DrMhEnTDTiN9OBRRWtBRRbAAAAAElFTkSuQmCC"
+                    <img src="https://drive.google.com/uc?export=view&id=156Xxr-y5U6iLLLSm7_8pkC6qzFBvzZAS"
                         alt="makesy instagram page ">
                 </a>
                 <a href="" target="_blank" rel="noopener noreferrer">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJFSURBVHgBrVW9ctNAEN49nUO6OG9gOkpTJTEFosmYijxC0jNj2XKYSZW4ggFL0RvEJXTQQRqcxqbDbxDzBIjSQZfLriw7in1y5LG/mRutbu92b3/uO4QFcJyzohRbNUBtI0BJ00hUIY0BaP0tur35GgQnwywbaDb8viStJxck2pADGnRHqZuWyZE1O3Hs+jUh5GcSn0FOIGCZ9hxW9vZHvf7lr0wHzeb5KX0+0NiE5bEJiNXKXhV6/R9Xcw745Inx1YBgUyT/JpHENUhy/pvEIqwHYaRGz7kmgv8sa+N0jcYZxaRJAJPTX2etpBCHE1nfy0VMDpRq3TlECrelFBsHRq3WrbbvnkEOuK4fkMPa7LwUt46gyr8x2sdxiHmgVNQxKhBfCgqxbNJ53ts/6X/H+VhuNLxDoyEoDI32KX0CcxZXSiwKxAtq5+um88lO64KgHpr2cH0ELIm40DL/epHukjQc5/xBZFGkQyK9ettrvGq3j7uL1qYQyqT1SrMayypswZg1YwTBuwEwgxrxn/YbwxpQF+krkwZx5EBOSFkwdiLTOXJ40tJ/szZPU4gQaj2OCFMRP3LRnsZc1HT9n5CT+/NCA3Y8r34kEk9HOpXv1Y1DqBS0WI4dUB8PNVEDrAmIusU2WZ6+B33i78qLfUoZ2rAKmMM8d/quPHjRer3L7i49FnSEXVzyVeO00MlP0sbnHDA4kp2d6hcUsI0ZPGVAVyl87fuN77MKXLSLWrhElHvAjMukOOEtbt34gtIdiiIRZHER4w6RR8/zF1xQkwAAAABJRU5ErkJggg=="
+                    <img src="https://drive.google.com/uc?export=view&id=12iOmeqQ9XYF_npgXtpWFio4nwmQi64tE"
                         alt="makesy youtube page">
                 </a>
                 <a href="https://twitter.com/makesyapp?lang=en" target="_blank" rel="noopener noreferrer">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJxSURBVHgBrVWxctNAEN09XRJ3KH9gOjqUKokpoipjKswXkHyB5dgpUgVXMEws6w9IOuiggzRxGpsO8wXoDxAdyUg6dpVzxpZPjjzxm9H4fHu3b29v9x3CAnjeW1uKJ01A5SJAVdGnTRF9Y1Dqa5zefgmCk7DIB5odv6tKa+MjDV0oAQXqPEluuyYiKz9x3PabQshPNHwGJYGADu05qO3u3wxHlz8KCTqd/in9vKevAsujAoj12m4dhqPv13MEHLl2/jgguHSSv5OTZHegc/6ThjasBlGc3GzxnQj+Z1nrpyt0zrB1kQDq6H/nV1BJRmgmHQMmrThWkZRWAxTu6Xk3vzBOcFNKsd4wOKHSV92USRD700S06XUQHIcTMs/r21KmHhG5eR9SpJ6gm39lJECs+n6b6hu36DQX6q65BkHQCmdX/rPJeRPMTvYkbXRM3Ubzzzk67fCA5zidc1FKWaXFxvvj7hcFeWbjL3IeTc8ZJSEVDhSApUUsMDY7Rz0PHkJBiifgE4RFRrpkm9NUZG97Z1wgLhQjEmoBgUAkXUobptzznLBEHxZjTFWkrk0WpSBEUAOR3VElmnX+wVmzNq6m5NsMknPM6thSf/I2Tl1KBJikFzHEIc9Z1ppDEb1RgA0oAeqZp1mFdtr+FZTU/rKgIM57vdah0EyHupFW5ByiJIEujzMCbiZF0gArAqLqTjr+/j0YkX7XXuxTyuY1ZSlQoGe99v27MvOiDYeXgx16LCiEHVzyVcvUF9XJtPM5AgafZHu7/hkFbBKJU9L/gETxpe8ffcsbcNEuKuEqSW6D5UCLoq03hVmDUg/FsQjymjWN/7nB7bU//Zf5AAAAAElFTkSuQmCC"
+                    <img src="https://drive.google.com/uc?export=view&id=1Q1raIHHwoy8H37v2qZ4dEWoPkC78U51C"
                         alt="makesy twitter page">
                 </a>
                 <a href="https://jo.linkedin.com/company/makesy" target="_blank" rel="noopener noreferrer">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIwSURBVHgBtVW9ctpAEN49XYi74DdQupRQ2SZF5MZDqjhPkOQJLCOSGVdAlUyMhfwEoUw6u0vcBDeQDt4gegRS2pG03sXCg+HAFsbfzI32dHd7+/PtHsICuG49r9WzPUByEMAmHunSkMcAiE6j5PIkCA7CeTrQrPizra2n31h04B4goHYcXzZMF1nTPz56/p5S+juLL+CeQMACn3lf2tq56PbO/sy9oFpt1fjzhccaZMcaIJZLW2Xo9n6dz1wglqfKHwYEhz35N/ZklIM05n0W87AaDKP4oig5UTKzrFxtRjnSfvOogsycY8iOfEoSwNT6v9M7RLl8XfdrQVu6D0sginFda5XbNS1WK60aJv9PST15J0RcBlolrubMvzGuItXJ0vUFygdwXXDOvA2s+5Xi4wXTGkHOHoUJ4+3JeUL0gV1/znKRx7bIRBAa9XPlK8zIHN/32kGwH47nIiPQsdlIsDUsgarn/xbrQEVvDw8/DaJEnWiLWqa94kEIGeB5TSGFI9ZRbDl3bB9KDkLIAEU4GdK7wjtQzJZzeCxwO1dRpAJ4JEhuFLNAuNyBFYMA29cMA2kHLduyqI8ranac12EcY1EuGDU7EYioASsCIjXGtXLzHvS4f5de7rAT6MBDwIY2j7ybd+XWi9btnnU2+bFgEzYx46smYWHLDyaVz1wgEE82Nso/UME6zulTBnQ45q99v/JzegEXnZLkc8vdlY4rTXFMAqn+UYFyDQnNUyYacQWXx9wD2o9lsQAAAABJRU5ErkJggg=="
+                    <img src="https://drive.google.com/uc?export=view&id=1KUEcC8zbdyzQYiNDzp4YtxcT9blooRGc"
                         alt="makesy linkedin page">
                 </a>
-
             </div>
         </section>
         <section style="width: 100%;  display: flex;justify-content: space-around; align-items: center;">
             <a class="a-style" href="http://" target="_blank" rel="noopener noreferrer">policy privacy</a>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABaSURBVHgBdc3RDYAgDEXR9zqgiRMIE6gTqBMoCwhMYKL7gVX5IvH8tLlJU0JFf00ZacCLwdhmZPDnCuQSPzmlRXQYVCjSC36Inrk66r/IZ/H7sZHSleisbecb54MdcrwzDGYAAAAASUVORK5CYII="
-                alt="" />
             <a class="a-style" href="http://" target="_blank" rel="noopener noreferrer">Help center</a>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABaSURBVHgBdc3RDYAgDEXR9zqgiRMIE6gTqBMoCwhMYKL7gVX5IvH8tLlJU0JFf00ZacCLwdhmZPDnCuQSPzmlRXQYVCjSC36Inrk66r/IZ/H7sZHSleisbecb54MdcrwzDGYAAAAASUVORK5CYII="
-                alt="" />
             <a class="a-style" href="http://" target="_blank" rel="noopener noreferrer">About Makesy</a>
         </section>
 
